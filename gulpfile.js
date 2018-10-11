@@ -377,9 +377,8 @@ gulp.task('sass-prod', function () {
         // .pipe(plumber())
         // .pipe(sassdoc(sassDocOptions))
         .pipe(sass({
-            outputStyle: 'compressed',
-            errorLogToConsole: true
-        }))
+            outputStyle: 'compressed'
+        }).on('errror', sass.logError))
         .pipe(autoprefixer({
             // browsers: ['last 5 versions'],
             browsers: ['last 9 versions', '> 5%', 'ie 8', 'ie 7'],

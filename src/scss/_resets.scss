@@ -1,4 +1,4 @@
-$debug: false !default;
+$debug: true !default;
 
 // Check for dead links during development
 @if $debug {
@@ -10,13 +10,16 @@ $debug: false !default;
 }
 
 html {
-    $min_width: $tablet-width;
-    $max_width: $dekstop-width;
-    $min_font: 14px;
-    $max_font: 19px;
-    @include fluid-font($min_width, $max_width, $min_font, $max_font);  
+    // $min_width: $tablet-width;
+    // $max_width: $dekstop-width;
+    // $min_font: 14px;
+    // $max_font: 19px;
+    // @include fluid-font($min_width, $max_width, $min_font, $max_font);  
     box-sizing: border-box;
     scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
 
     @if not $debug {
         user-zoom: fixed;
@@ -36,8 +39,12 @@ ul {
 body {
     margin: 0;
     padding: 0;
-    font-family: $main-font;
-    color: getColor(tri3);
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    // font-family: $main-font;
+    // color: getColor(tri3);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased;
@@ -66,29 +73,6 @@ body {
     }
 }
 
-%main-font {
-    font-family: $main-font;
-}
-
-@for $i from 1 through 6 {
-    h#{$i} {
-        // font-family: $main-font;
-        @extend %main-font;
-    }
-}
-
-a {
-    &:not(:hover) {
-        color: getColor(tri3);
-        text-decoration: none; // text-decoration-color: var(--tc-grey);
-    }
-
-    &:hover {
-        color: getColor(tri3);
-        // text-decoration: none;
-    }
-}
-
 code {
     font-family: monospace;
 }
@@ -110,9 +94,4 @@ figure {
 
 p {
     font-weight: 400;
-    color: getColor(tri3);
-}
-
-.row {
-    @extend %row;
 }

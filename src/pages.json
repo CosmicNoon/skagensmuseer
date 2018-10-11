@@ -1,0 +1,16 @@
+[
+    {
+        "pagename": "index",
+        "content": [
+            {"lan": "dk", "title": "Forside", "content": "blablalbalbalba"},
+            {"lan": "uk", "title": "Frontpage", "content": "blablalbalbalba"}
+        ]
+    },
+    {
+        "pagename": "contact",
+        "content": [
+            {"lan": "dk", "title": "Kontakt", "content": "blabalblalablab"},
+            {"lan": "uk", "title": "Contact", "content": "blabalblalablab"}
+        ]
+    }
+]
