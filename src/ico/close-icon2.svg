@@ -1,0 +1,14 @@
+<svg version="1.1" viewBox="0 0 8.9486 8.9538" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <defs>
+        <style>
+            .cls-1 {
+                fill:none;
+                stroke-linecap:round;
+                stroke-width:1.8746;
+                stroke:#000000
+            }
+        </style>
+    </defs>
+    <path d="m0.95 8 7.0548-7.0569" class=".cls-1"/>
+    <path d="m0.95 0.95 7.0548 7.0569" class=".cls-1"/>
+</svg>

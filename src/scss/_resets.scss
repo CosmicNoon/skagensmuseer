@@ -1,4 +1,4 @@
-$debug: true !default;
+$debug: false !default;
 
 // Check for dead links during development
 @if $debug {
@@ -20,6 +20,7 @@ html {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+    position: absolute;
 
     @if not $debug {
         user-zoom: fixed;
@@ -42,13 +43,20 @@ body {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+    // overflow: auto;
     position: relative;
     // font-family: $main-font;
     // color: getColor(tri3);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-smoothing: antialiased;
+    // -webkit-font-smoothing: subpixel-antialiased;
+    // -webkit-font-smoothing: antialiased;
+    // -moz-osx-font-smoothing: grayscale;
+    // font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    // letter-spacing: .02rem;
+    // color: #252C31;
+    color: #494948;
 
     // font-smooth: auto;
 
@@ -82,6 +90,7 @@ figure {
     padding: 0;
     width: 100%;
     height: auto;
+
     img {
         object-fit: contain;
         object-position: center;
@@ -93,5 +102,6 @@ figure {
 }
 
 p {
-    font-weight: 400;
+    // font-weight: 400;
+    letter-spacing: .02rem;
 }
