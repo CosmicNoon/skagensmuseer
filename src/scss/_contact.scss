@@ -1,0 +1,38 @@
+@import 'variable';
+
+.kontaktmain{
+  font-family: $font;
+  margin: 2% 10%;
+}
+
+.kontakt{
+  section{
+    margin: 10% 0%;
+  }
+}
+
+.kontaktstuff{
+  //fill: $golddark;
+  font-weight: 300;
+  border-radius: 1%;
+  display: grid;
+  grid-template-columns: 20% 76%;
+  grid-column-gap: 4%;
+  background-color: $lightest;
+  padding: 2%;
+  font-size: 12px;
+  color: $halfgrey;
+  div{
+    padding: 5px;
+  }
+  img{
+    width: 100%;
+  }
+  h3{
+    font-weight: 400;
+    margin-bottom: 1%;
+    margin-top: 0;
+    color: black;
+    font-size: 15px;
+  }
+}
