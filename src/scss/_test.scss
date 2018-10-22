@@ -130,8 +130,8 @@ $filter: drop-shadow(0 0 2px $tc-black);
 }
 
 .logo-svg {
-    fill: $tc-black;
-    // fill: #ffffff;
+    // fill: $tc-black;
+    fill: #ffffff;
 
     &--white {
         fill: #ffffff;
@@ -401,11 +401,6 @@ $header-icon-top: $header-height / 4;
     h1 {
         padding: 0 1rem;
     }
-    // section {
-    //     p {
-    //         padding: 0 1rem;
-    //     }
-    // }
 
     &.show {
         // transition: none;
@@ -466,17 +461,6 @@ $header-icon-top: $header-height / 4;
         // $filter: drop-shadow(0 0 2px $tc-black);
         filter: saturate(70%);
 
-        // h1 {
-        //     filter: $filter;
-        // }
-
-        // .logo__header {
-        //     filter: $filter;
-        // }
-
-        // .menu-button {
-        //     filter: $filter;
-        // }
     }
 
     &--bg-half-black {

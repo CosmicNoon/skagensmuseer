@@ -31,3 +31,11 @@
   text-decoration: none;
   color: grey;
 }
+
+.bg-museums {
+    background-image: url('../img/museum2.jpg');
+    background-size: 120% auto;
+    // background-size: cover;
+    background-position: 50% 80%;
+    background-repeat: no-repeat;
+}

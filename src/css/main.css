@@ -312,7 +312,7 @@ p {
 }
 
 .logo-svg {
-  fill: #252C31;
+  fill: #ffffff;
 }
 
 .logo-svg--white {
@@ -746,29 +746,6 @@ p {
   background-repeat: no-repeat;
 }
 
-.bgforside-museum h1 {
-  filter: drop-shadow(0 0 2px #252C31);
-}
-
-.bgforside-museum .logo__header {
-  filter: drop-shadow(0 0 2px #252C31);
-}
-
-.bgforside-museum .menu-button {
-  filter: drop-shadow(0 0 2px #252C31);
-}
-
-.fade-to-white.active {
-  background: white;
-  transition-timing-function: ease;
-  transition-duration: 1s;
-  color: #252C31;
-}
-
-.fade-to-white.active > * {
-  filter: none;
-}
-
 .kontaktmain {
   font-family: "Oswald", sans-serif;
   margin: 2% 10%;
@@ -871,6 +848,13 @@ p {
 .tremuseerlink {
   text-decoration: none;
   color: grey;
+}
+
+.bg-museums {
+  background-image: url("../img/museum2.jpg");
+  background-size: 120% auto;
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=maps/main.css.map */
