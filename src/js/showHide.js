@@ -1,13 +1,13 @@
 /**
  *  Funktion til at skifte den viste side
- * @param {integer} jumpTo 
+ * @param {integer} jumpTo
  */
 function changePage(jumpTo) {
 
     // Få siderne der skal skiftes imellem, som array (HTMLCollection)
     let frames = document.querySelectorAll('.frame')
 
-    // Få transisionstiden fra en af siderne (de er ens). 
+    // Få transisionstiden fra en af siderne (de er ens).
     // Den returneres som sekunder men skal bruges som millisekunder
     // så derfor ganges der med 1000.
     let transitionTime = parseFloat(getComputedStyle(frames[0])['transitionDuration']) * 1000;
@@ -103,7 +103,7 @@ function showMenu(remove) {
     } else {
         menu.classList.toggle('show-menu');
     }
-    
+
     // console.log(menuBtns);
     restrictSize();
 }
@@ -121,10 +121,10 @@ var headers = document.querySelectorAll('.frame header');
 var headerHeight = headers[0].offsetHeight;
 var frameContainer = document.querySelector('.frame-container');
 
-// let headerContent = document.querySelectorAll('.frame header *');    
+// let headerContent = document.querySelectorAll('.frame header *');
 // let contentTop = parseFloat(getComputedStyle(headerContent[0])['top']);
 
-// let scale = 
+// let scale =
 
 // let contentHeight = headerContent[0].offsetHeight;
 var scrollPos = frameContainer.scrollTop;
@@ -201,23 +201,23 @@ if (currentFrame.querySelector('.fade-to-white')) {
     });
 }
 
-if(currentFrame.querySelector('.logo-svg--loading')) {
-    var loadingLogo = currentFrame.querySelector('.logo-svg--loading');
-    var loadTime = 6000;
+if(currentFrame.querySelector('.svg-loader')) {
+    var loadingLogo = currentFrame.querySelector('.svg-loader');
+    var loadTime = 4000;
     setTimeout(function(){
         // loadingLogo.classList.remove('logo-svg--loading')
         changePage(1);
     }, loadTime);
 
     setTimeout(function(){
-        loadingLogo.classList.remove('logo-svg--loading')
+        loadingLogo.classList.remove('svg-loader')
         // changePage(1);
-    }, loadTime + 500); 
+    }, loadTime + 500);
 }
 
 // var navLinks = document.querySelectorAll('.navbar a');
 // navLinks.forEach(link => {
-//     link.onclick = 
+//     link.onclick =
 // });
 
 // var frames = document.querySelectorAll('.frame');
@@ -225,7 +225,7 @@ if(currentFrame.querySelector('.logo-svg--loading')) {
 // for (let i = 0; frames.length; i++) {
 //     if(frames[i].classList.contains('show')) {
 //         break;
-//     } 
+//     }
 //     if(i = frames.length && frames[i].classList.contains('show') != true) {
 //         frames[0].classList.add('show');
 //     }
