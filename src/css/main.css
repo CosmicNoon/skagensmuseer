@@ -757,4 +757,49 @@ p {
   filter: drop-shadow(0 0 2px #252C31);
 }
 
+.kontaktmain {
+  font-family: "Oswald", sans-serif;
+  margin: 2% 10%;
+}
+
+.kontaktmain iframe {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 55vh;
+  border-style: none;
+}
+
+.kontakt section {
+  margin: 10% 0%;
+}
+
+.kontaktstuff {
+  font-weight: 300;
+  border-radius: 1%;
+  display: grid;
+  grid-template-columns: 20% 76%;
+  grid-column-gap: 4%;
+  background-color: #ececec;
+  padding: 2%;
+  font-size: 12px;
+  color: #757474;
+}
+
+.kontaktstuff div {
+  padding: 5px;
+}
+
+.kontaktstuff img {
+  width: 100%;
+}
+
+.kontaktstuff h3 {
+  font-weight: 400;
+  margin-bottom: 1%;
+  margin-top: 0;
+  color: black;
+  font-size: 15px;
+}
+
 /*# sourceMappingURL=maps/main.css.map */
