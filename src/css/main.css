@@ -579,36 +579,12 @@ p {
   background-repeat: no-repeat;
 }
 
-.moving-header--bg-museum h1 {
-  filter: drop-shadow(0 0 2px #252C31);
-}
-
-.moving-header--bg-museum .logo__header {
-  filter: drop-shadow(0 0 2px #252C31);
-}
-
-.moving-header--bg-museum .menu-button {
-  filter: drop-shadow(0 0 2px #252C31);
-}
-
 .moving-header--bg-map {
   background-image: url("../img/map.jpg");
   background-size: 100% auto;
   background-position: 0% 80%;
   background-repeat: no-repeat;
   filter: saturate(70%);
-}
-
-.moving-header--bg-map h1 {
-  filter: drop-shadow(0 0 2px #252C31);
-}
-
-.moving-header--bg-map .logo__header {
-  filter: drop-shadow(0 0 2px #252C31);
-}
-
-.moving-header--bg-map .menu-button {
-  filter: drop-shadow(0 0 2px #252C31);
 }
 
 .moving-header--bg-half-black {
@@ -691,6 +667,18 @@ p {
   color: #ffffff;
 }
 
+.fade-to-white h1 {
+  filter: drop-shadow(0 0 2px #252C31);
+}
+
+.fade-to-white .logo__header {
+  filter: drop-shadow(0 0 2px #252C31);
+}
+
+.fade-to-white .menu-button {
+  filter: drop-shadow(0 0 2px #252C31);
+}
+
 .fade-to-white.active {
   background: white;
   transition-timing-function: ease;
@@ -767,27 +755,6 @@ p {
 
 .bgforside-museum .menu-button {
   filter: drop-shadow(0 0 2px #252C31);
-}
-
-.fade-to-white {
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  transition-property: background;
-  transition-duration: .2s;
-  transition-timing-function: ease-in;
-  color: #ffffff;
-}
-
-.fade-to-white.active {
-  background: white;
-  transition-timing-function: ease;
-  transition-duration: 1s;
-  color: #252C31;
-}
-
-.fade-to-white.active > * {
-  filter: none;
 }
 
 /*# sourceMappingURL=maps/main.css.map */
