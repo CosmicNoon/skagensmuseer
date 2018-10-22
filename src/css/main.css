@@ -203,6 +203,7 @@ p {
   left: 50%;
   margin-top: -2rem;
   margin-left: -2rem;
+  filter: drop-shadow(0 1px 2px #252C31);
 }
 
 .map iframe {
@@ -239,11 +240,54 @@ p {
 }
 
 .logo-svg {
-  fill: #ffffff;
+  fill: #252C31;
 }
 
 .logo-svg--white {
   fill: #ffffff;
+}
+
+.logo-svg--loading {
+  animation-timing-function: ease-in;
+  fill: #ffffff;
+}
+
+.logo-svg--loading .cls-1 {
+  transform-origin: center center;
+  animation-name: grow;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+
+.logo-svg--loading .cls-2 {
+  transform-origin: center center;
+  animation-name: grow;
+  animation-delay: .25s;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+
+.logo-svg--loading .cls-3 {
+  transform-origin: center center;
+  animation-name: grow;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+    fill: #efefefef;
+  }
+  to {
+    transform: scale(1.1);
+    fill: #252C31;
+  }
 }
 
 .icon-svg--white {
@@ -295,6 +339,17 @@ p {
   transform: translate(-50%, -50%);
   width: 2.5rem;
   height: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.logo__loading {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 50vmin;
+  height: 50vmin;
   margin: 0;
   padding: 0;
 }
@@ -413,7 +468,7 @@ p {
   width: 100%;
   height: 0;
   background: #ffffff;
-  transition: left .7s ease;
+  transition: all .7s ease;
   z-index: 100;
   visibility: hidden;
   overflow-y: hidden;
@@ -433,6 +488,7 @@ p {
   height: unset;
   min-height: 100%;
   left: 0;
+  box-shadow: 0 0 1000px black;
 }
 
 .moving-header {
@@ -441,7 +497,7 @@ p {
   width: 100%;
   height: 150px;
   will-change: height;
-  transition: height 50ms ease-out;
+  transition: height 100ms ease-out;
 }
 
 .moving-header--bg-museum {
@@ -591,7 +647,6 @@ p {
 
 .stack-top {
   z-index: 200;
-  box-shadow: 0 0 1000px black;
 }
 
 .restrict-size {

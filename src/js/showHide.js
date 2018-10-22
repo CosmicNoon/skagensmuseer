@@ -201,6 +201,20 @@ if (currentFrame.querySelector('.fade-to-white')) {
     });
 }
 
+if(currentFrame.querySelector('.logo-svg--loading')) {
+    var loadingLogo = currentFrame.querySelector('.logo-svg--loading');
+    var loadTime = 6000;
+    setTimeout(function(){
+        // loadingLogo.classList.remove('logo-svg--loading')
+        changePage(1);
+    }, loadTime);
+
+    setTimeout(function(){
+        loadingLogo.classList.remove('logo-svg--loading')
+        // changePage(1);
+    }, loadTime + 500); 
+}
+
 // var navLinks = document.querySelectorAll('.navbar a');
 // navLinks.forEach(link => {
 //     link.onclick = 
