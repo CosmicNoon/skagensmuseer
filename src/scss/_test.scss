@@ -1,4 +1,5 @@
 $tc-black: #252C31;
+$filter: drop-shadow(0 0 2px $tc-black);
 // $tc-black: #494948;
 .img-nice {
     width: 100%;
@@ -436,19 +437,19 @@ $header-icon-top: $header-height / 4;
         // background-position: 0 0;
         // background-position: 40% center;
         background-repeat: no-repeat;
-        $filter: drop-shadow(0 0 2px $tc-black);
+        // $filter: drop-shadow(0 0 2px $tc-black);
 
-        h1 {
-            filter: $filter;
-        }
+        // h1 {
+        //     filter: $filter;
+        // }
 
-        .logo__header {
-            filter: $filter;
-        }
+        // .logo__header {
+        //     filter: $filter;
+        // }
 
-        .menu-button {
-            filter: $filter;
-        }
+        // .menu-button {
+        //     filter: $filter;
+        // }
     }
     
     &--bg-map {
@@ -462,20 +463,20 @@ $header-icon-top: $header-height / 4;
         // background-position: 0 0;
         // background-position: 40% center;
         background-repeat: no-repeat;
-        $filter: drop-shadow(0 0 2px $tc-black);
+        // $filter: drop-shadow(0 0 2px $tc-black);
         filter: saturate(70%);
 
-        h1 {
-            filter: $filter;
-        }
+        // h1 {
+        //     filter: $filter;
+        // }
 
-        .logo__header {
-            filter: $filter;
-        }
+        // .logo__header {
+        //     filter: $filter;
+        // }
 
-        .menu-button {
-            filter: $filter;
-        }
+        // .menu-button {
+        //     filter: $filter;
+        // }
     }
 
     &--bg-half-black {
@@ -575,6 +576,18 @@ $header-icon-top: $header-height / 4;
     transition-timing-function: ease-in;
 
     color: #ffffff;
+
+    h1 {
+        filter: $filter;
+    }
+
+    .logo__header {
+        filter: $filter;
+    }
+
+    .menu-button {
+        filter: $filter;
+    }
 
     &.active {
         background: rgba(255, 255, 255, 1);
