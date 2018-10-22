@@ -1,0 +1,95 @@
+html, body {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  outline: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.svg-loader{
+  height: 45%;
+  width: 40%;
+}
+.top{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: block;
+  animation: dot_top 3s 0s;
+  animation-fill-mode: forwards;
+}
+.mid{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: block;
+  animation: dot_mid 2s 1s;
+  animation-fill-mode: forwards;
+}
+.bund{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: block;
+  animation: dot_bund 1.5s 1.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes dot_top{
+  from{fill:#fff; transform: scale(0);}
+  to {fill:#7b6c48; transform: scale(1);}
+}
+@keyframes dot_mid{
+  from{fill:#fff; transform: scale(0);}
+  to {fill:#7b6c48; transform: scale(1);}
+}
+@keyframes dot_bund{
+  from{fill:#fff; transform: scale(0);}
+  to {fill:#7b6c48; transform: scale(1);}
+}
+
+// .svg-loader{
+//   width: 30%;
+//   height: 40%;
+//   margin: auto;
+//   display: block;
+//   animation-delay: 1s;
+//   animation-direction: alternate;
+//   animation: svg_loader 3s infinite  alternate ;
+// }
+// @keyframes svg_loader {
+//   from {fill:white; transform: rotate(0deg) rotateX(0deg) scale(0);}
+//   to {fill:#7b6c48; transform: rotate(360deg) rotateX(360deg) scale(2);}
+// }
+
+// .svg-loader{
+//   width: 30%;
+//   height: 40%;
+//   margin: auto;
+//   display: block;
+//   animation-direction: alternate;
+//   animation: svg_loader 2s infinite  alternate ;
+// }
+// @keyframes svg_loader{
+//   from{fill:#fff;}
+//   to {fill:#7b6c48;}
+// }
+
+// .svg-loader{
+//   width: 30%;
+//   height: 40%;
+//   margin: auto;
+//   display: block;
+//   // animation-delay: 2s;
+//   // animation-direction: alternate;
+//   animation: svg_loader 3s infinite 2s;
+// }
+// @keyframes svg_loader {
+//   from {fill:white; transform: scale(0);}
+//   to {fill:#7b6c48; transform: scale(2);}
+// }
