@@ -166,4 +166,610 @@ body {
   }
 }
 
+/* line 3, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.img-nice {
+  width: 100%;
+  max-height: auto;
+  object-position: center;
+  object-fit: cover;
+}
+
+/* line 10, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.img-breaker {
+  height: 30vh;
+  max-height: 400px;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* line 16, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.img-breaker--face .img-nice {
+  transform: translateY(-10%);
+}
+
+/* line 22, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.video-container {
+  margin: 0;
+  padding: 0 1rem;
+}
+
+/* line 27, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.video-container video {
+  z-index: 1;
+  top: 1rem;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  max-height: 100vh;
+}
+
+/* line 37, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.video-container__description {
+  position: relative;
+  z-index: 0;
+  background: #252C31;
+  color: #ffffff;
+  padding: 1rem;
+  margin: 0;
+  margin-top: -5px;
+}
+
+/* line 48, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.video-container__description span {
+  display: block;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+/* line 58, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.video-container__description svg {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  height: 4.1rem;
+  width: 4rem;
+  transform: translateY(-50%);
+}
+
+/* line 69, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.map {
+  position: relative;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+/* line 74, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.map__icon-top {
+  position: absolute;
+  height: 4rem;
+  width: 4rem;
+  left: 50%;
+  margin-top: -2rem;
+  margin-left: -2rem;
+  filter: drop-shadow(0 1px 2px #252C31);
+}
+
+/* line 89, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.map iframe {
+  width: 100%;
+  height: 50vh;
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(37, 44, 49, 0.15);
+}
+
+/* line 97, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.map__description {
+  position: relative;
+  background: #252C31;
+  color: #ffffff;
+  padding: 1rem;
+  margin: 0;
+  margin-top: -5px;
+}
+
+/* line 107, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.map__description span {
+  display: block;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+/* line 116, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.map__description svg {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  height: 4.1rem;
+  width: 4rem;
+  transform: translateY(-50%);
+}
+
+/* line 131, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.logo-svg {
+  fill: #252C31;
+}
+
+/* line 135, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.logo-svg--white {
+  fill: #ffffff;
+}
+
+/* line 139, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.logo-svg--loading {
+  animation-timing-function: ease-in;
+  fill: #ffffff;
+}
+
+/* line 145, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.logo-svg--loading .cls-1 {
+  transform-origin: center center;
+  animation-name: grow;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+
+/* line 155, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.logo-svg--loading .cls-2 {
+  transform-origin: center center;
+  animation-name: grow;
+  animation-delay: .25s;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+
+/* line 164, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.logo-svg--loading .cls-3 {
+  transform-origin: center center;
+  animation-name: grow;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+    fill: #efefefef;
+  }
+  to {
+    transform: scale(1.1);
+    fill: #252C31;
+  }
+}
+
+/* line 191, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.icon-svg--white {
+  stroke: #ffffff;
+  fill: #ffffff;
+}
+
+/* line 197, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.icon-header-menu {
+  stroke: #252C31;
+  fill: #252C31;
+}
+
+/* line 201, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.icon-header-menu--white {
+  stroke: #ffffff;
+  fill: #ffffff;
+}
+
+/* line 207, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.icon-close {
+  stroke-linecap: round;
+  stroke-width: 1.5;
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+
+/* line 216, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.icon-header {
+  stroke: #252C31;
+  fill: #252C31;
+}
+
+/* line 220, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.icon-header--white {
+  stroke: #ffffff;
+  fill: #ffffff;
+}
+
+/* line 232, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.frame-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* line 247, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.logo__header {
+  top: 37.5px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 259, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.logo__loading {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 50vmin;
+  height: 50vmin;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 273, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.menu {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #252C31;
+  transition: .5s ease;
+  left: 100%;
+  z-index: 300;
+}
+
+/* line 284, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.menu .nav-menu-button {
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  transform: translate(0%, -50%);
+  top: 37.5px;
+  left: 20px;
+  cursor: pointer;
+}
+
+/* line 294, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.menu__logo {
+  height: 2.5rem;
+  width: 2.5rem;
+  left: 50%;
+  top: 37.5px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+/* line 303, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.menu__footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  background: #ffffff;
+}
+
+/* line 310, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.menu__footer .social-links {
+  margin: 0;
+  padding: 0 1rem;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  box-sizing: border-box;
+}
+
+/* line 43, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_grid.scss */
+.menu__footer .social-links *,
+.menu__footer .social-links *::before,
+.menu__footer .social-links *::after {
+  box-sizing: border-box;
+}
+
+/* line 317, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.menu__footer .social-links li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 324, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.menu__footer svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+}
+
+/* line 331, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.menu.show-menu {
+  left: 0;
+  box-shadow: 0 0 1000px black;
+}
+
+/* line 338, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 1rem;
+  position: relative;
+  top: 20vh;
+  margin: 0 2rem;
+  padding: 0;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+/* line 350, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.navbar button {
+  background: #ffffff;
+  -webkit-appearance: none;
+  border: 0;
+  border-radius: 100%;
+  width: 4rem;
+  height: 4rem;
+}
+
+/* line 362, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* line 367, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.navbar li {
+  margin: auto;
+}
+
+/* line 370, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.navbar li svg {
+  display: block;
+  margin: auto;
+  width: 4rem;
+  height: 4rem;
+}
+
+/* line 379, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.frame {
+  position: absolute;
+  left: -100%;
+  width: 100%;
+  height: 0;
+  background: #ffffff;
+  transition: all .7s ease;
+  z-index: 100;
+  visibility: hidden;
+  overflow-y: hidden;
+}
+
+/* line 396, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.frame > *:nth-child(2) {
+  margin-top: calc(150px + 1rem);
+}
+
+/* line 400, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.frame h1 {
+  padding: 0 1rem;
+}
+
+/* line 409, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.frame.show {
+  overflow-y: unset;
+  visibility: visible;
+  height: unset;
+  min-height: 100%;
+  left: 0;
+  box-shadow: 0 0 1000px black;
+}
+
+/* line 420, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.moving-header {
+  z-index: 101;
+  position: fixed;
+  width: 100%;
+  height: 150px;
+  will-change: height;
+  transition: height 100ms ease-out;
+}
+
+/* line 430, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.moving-header--bg-museum {
+  background-image: url("../img/museum.png");
+  background-size: 120% auto;
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
+}
+
+/* line 441, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.moving-header--bg-museum h1 {
+  filter: drop-shadow(0 0 2px #252C31);
+}
+
+/* line 445, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.moving-header--bg-museum .logo__header {
+  filter: drop-shadow(0 0 2px #252C31);
+}
+
+/* line 449, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.moving-header--bg-museum .menu-button {
+  filter: drop-shadow(0 0 2px #252C31);
+}
+
+/* line 454, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.moving-header--bg-map {
+  background-image: url("../img/map.jpg");
+  background-size: 100% auto;
+  background-position: 0% 80%;
+  background-repeat: no-repeat;
+  filter: saturate(70%);
+}
+
+/* line 468, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.moving-header--bg-map h1 {
+  filter: drop-shadow(0 0 2px #252C31);
+}
+
+/* line 472, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.moving-header--bg-map .logo__header {
+  filter: drop-shadow(0 0 2px #252C31);
+}
+
+/* line 476, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.moving-header--bg-map .menu-button {
+  filter: drop-shadow(0 0 2px #252C31);
+}
+
+/* line 481, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.moving-header--bg-half-black {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 485, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.moving-header--bg-white {
+  background-color: white;
+}
+
+/* line 490, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.moving-header h1 {
+  top: 20px;
+  right: 0;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 503, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.moving-header .small-move {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  max-height: 45px;
+}
+
+/* line 513, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.moving-header .small-move h1 {
+  left: 50%;
+  top: 100%;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 522, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.moving-header .small-move .menu-button {
+  top: 100%;
+}
+
+/* line 527, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.moving-header .center-move {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 535, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.moving-header .center-move h1 {
+  top: 50%;
+}
+
+/* line 544, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.menu-button {
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  top: 37.5px;
+  transform: translate(0%, -50%);
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+/* line 555, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.logo__header {
+  top: 37.5px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 568, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.fade-to-white {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  transition-property: background;
+  transition-duration: .2s;
+  transition-timing-function: ease-in;
+  color: #ffffff;
+}
+
+/* line 579, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.fade-to-white.active {
+  background: white;
+  transition-timing-function: ease;
+  transition-duration: 1s;
+  color: #252C31;
+}
+
+/* line 587, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.fade-to-white.active > * {
+  filter: none;
+}
+
+/* line 594, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.text-museum h1 {
+  font-size: 7vmin;
+}
+
+/* line 598, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.text-museum p {
+  padding: 0 1rem;
+}
+
+/* line 611, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.helper {
+  position: fixed;
+  z-index: 250;
+  top: 50vh;
+  left: 20px;
+}
+
+/* line 618, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.stack-top {
+  z-index: 200;
+}
+
+/* line 624, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.restrict-size {
+  height: 100% !important;
+  overflow-y: hidden !important;
+}
+
+/* line 629, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_test.scss */
+.hidden {
+  visibility: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
 /*# sourceMappingURL=../css/main.map */
