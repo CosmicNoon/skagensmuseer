@@ -292,10 +292,10 @@
 
     <div class="frame-container">
 
-        <article class="frame" data-framenumber="0">
+        <article class="frame show" data-framenumber="0">
             <!-- <button onclick="changeImg('0')" class="menu--toggle">menu</button> -->
-            <header class="moving-header">
-                <section>
+            <header class="moving-header bgforside-museum">
+                <section class="fade-to-white">
                     <svg class="menu-button" onclick="showMenu()">
                         <use xlink:href="#menu-header-svgID" />
                     </svg>
@@ -303,29 +303,53 @@
                     <svg class="logo__header">
                         <use xlink:href="#logo-menu-svgID" />
                     </svg>
-                    <h1>header</h1>
+                    
                 </section>
             </header>
+            <section class="forside">
+                <h2>Om Skagen</h2>
+                <p> Skagens Museum er et kunstmuseum i Skagen
+                    i Nordjylland. Museet besidder og udstiller en
+                    omfattende samling af værker udført af
+                    Skagensmalerne, heriblandt Anna og Michael
+                    Ancher, Marie og P.S. Krøyer, Laurits Tuxen,
+                    Viggo Johansen og Holger Drachmann.</p>
+                    <video src="video/30-frames.mp4" controls poster="video/video-poster.svg">
+                        <source src="video/30-frames.mp4" type="video/mp4">
+                    </video>
+    
+                    <p class="video-container__description">
+                        <span>Video</span>
+                        Af Skagen Museum
+                        <svg>
+                            <use xlink:href="#menu-video-svgID" />
+                        </svg>
+                    </p>
+                    <h2>Find os her</h2>
+                <p> Skagens Museum er et kunstmuseum i Skagen
+                    i Nordjylland. Museet besidder og udstiller en
+                    omfattende samling af værker udført af
+                    Skagensmalerne, heriblandt Anna og Michael
+                    Ancher, Marie og P.S. Krøyer, Laurits Tuxen,
+                    Viggo Johansen og Holger Drachmann.</p>
+                    <!-- <svg class="map__icon-top">
+                            <use xlink:href="#map-icon-svgID" />
+                        </svg> -->
+                      <iframe allow="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d133.15687824613994!2d10.597102303863783!3d57.724779762671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464f44de156a155d%3A0x9daec7ccbf7473c0!2sSkagens+Museum!5e0!3m2!1sda!2sdk!4v1539551028377"></iframe>
+                <!-- <p class="map__description">
+                    <span>Map</span>
+                    Over Skagen og museer
+                </p> -->
 
+                <p class="map__description">
+                    <span>Kort</span>
+                    Over Skagens Museum
+                    <svg>
+                        <use xlink:href="#menu-map-svgID" />
+                    </svg>
+                </p>
+            </section>
 
-            this is another frame
-            <button onclick="changePage(1)" class="menu--toggle">page3</button>
-            <li>
-                <button onclick="changePage('0')" class="page" id="show-frontpage">Forside</button>
-            </li>
-            <li>
-                <button onclick="changePage(1)" class="page" id="show-frontpage">side 2</button>
-            </li>
-            <li>
-                <button onclick="changePage(2)" class="page" id="show-frontpage">Side 3</button>
-            </li>
-            <li>
-                <button onclick="changePage(3)" class="page" id="show-frontpage">Side 4</button>
-            </li>
-            <li>
-                <button onclick="changePage(4)" class="page" id="show-frontpage">Side 4</button>
-            </li>
-            <!-- <button onclick="changeImg('0')" class="menu--toggle">page0</button> -->
         </article>
 
         <article class="frame" data-framenumber="1">
@@ -753,7 +777,7 @@
             </p>
         </article>
 
-        <article class="frame show">
+        <article class="frame">
           <svg class="svg-loader" id="Layer_1" data-name="Layer 1" viewBox="0 0 200 576" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <style>

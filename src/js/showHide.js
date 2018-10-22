@@ -206,7 +206,7 @@ if(currentFrame.querySelector('.svg-loader')) {
     var loadTime = 4000;
     setTimeout(function(){
         // loadingLogo.classList.remove('logo-svg--loading')
-        changePage(1);
+        //changePage(1);
     }, loadTime);
 
     setTimeout(function(){
