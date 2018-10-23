@@ -320,6 +320,15 @@ $header-icon-top: $header-height / 4;
                 justify-content: center;
                 align-items: center;
             }
+            .offline-message {
+                display: none;
+            
+                @at-root {
+                    .offline & {
+                        display: list-item;
+                    }
+                }
+            }
         }
 
         svg {
@@ -631,3 +640,4 @@ $header-icon-top: $header-height / 4;
     margin: 0;
     padding: 0;
 }
+

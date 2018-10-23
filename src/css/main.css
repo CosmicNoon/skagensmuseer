@@ -485,6 +485,14 @@ p {
   align-items: center;
 }
 
+.menu__footer .social-links .offline-message {
+  display: none;
+}
+
+.offline .menu__footer .social-links .offline-message {
+  display: list-item;
+}
+
 .menu__footer svg {
   width: 1.5rem;
   height: 1.5rem;
@@ -850,10 +858,6 @@ p {
 .tremuseerlink {
   text-decoration: none;
   color: grey;
-}
-
-.three-museums {
-  padding: 1rem;
 }
 
 .bg-museums {

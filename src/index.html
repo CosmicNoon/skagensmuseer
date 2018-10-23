@@ -8,13 +8,18 @@
     <title>Skagens Museer</title>
 
     <!-- Web app stuff-->
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link rel="manifest" href="./site.webmanifest">
+
+
+
+
 
     <!-- Search Engine Meta Tags -->
     <meta name="description" content="Skagens Museer">
@@ -195,6 +200,13 @@
             <path d="m10.23 7.762h-6.35c-.19484 0-.36114-.06888-.49891-.20665s-.20665-.30407-.20665-.4989.0689-.36113.20665-.4989c.13777-.13777.30407-.20665.49891-.20665h6.35c.19483 0 .36113.06888.4989.20665s.20665.30407.20665.4989-.0689.36114-.20665.4989c-.13777.13777-.30407.20665-.4989.20665z"
                 style="fill:#ffffff" />
         </symbol>
+
+        <symbol id="lnr-warning" viewBox="0 0 1024 1024">
+            <title>warning</title>
+            <path class="path1" d="M947.2 972.8h-921.6c-9.094 0-17.507-4.826-22.099-12.677s-4.672-17.547-0.214-25.474l460.8-819.2c4.536-8.061 13.066-13.050 22.314-13.050s17.778 4.989 22.312 13.050l460.8 819.2c4.459 7.926 4.376 17.624-0.214 25.474-4.592 7.851-13.002 12.677-22.098 12.677zM69.371 921.6h834.056l-417.027-741.382-417.029 741.382z"></path>
+            <path class="path2" d="M486.4 716.8c-14.138 0-25.6-11.461-25.6-25.6v-256c0-14.138 11.462-25.6 25.6-25.6s25.6 11.462 25.6 25.6v256c0 14.139-11.462 25.6-25.6 25.6z"></path>
+            <path class="path3" d="M486.4 870.4c-14.138 0-25.6-11.461-25.6-25.6v-51.2c0-14.139 11.462-25.6 25.6-25.6s25.6 11.461 25.6 25.6v51.2c0 14.139-11.462 25.6-25.6 25.6z"></path>
+        </symbol>
     </svg>
 
 
@@ -292,6 +304,12 @@
                             <use xlink:href="#twitter-svgID" />
                         </svg>
                     </a>
+                </li>
+                <li class="offline-message">
+                    <svg>
+                        <use xlink:href="#lnr-warning"></use>
+                    </svg>
+                    Offline
                 </li>
             </ul>
         </footer>
@@ -653,7 +671,7 @@
     </div>
 
     <script src="js/showHide.js"></script>
-
+    <script src="sw-register.js"></script>
 </body>
 
 </html>

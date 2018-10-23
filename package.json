@@ -33,6 +33,7 @@
     "imagemin-pngquant": "^6.0.0",
     "postcss-font-magician": "^2.2.1",
     "run-sequence": "^2.2.1",
-    "sassdoc": "^2.5.0"
+    "sassdoc": "^2.5.0",
+    "workbox-build": "^3.6.3"
   }
 }
