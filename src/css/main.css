@@ -744,6 +744,7 @@ p {
   background-size: 120% auto;
   background-position: 50% 80%;
   background-repeat: no-repeat;
+  filter: brightness(130%) saturate(70%);
 }
 
 .kontaktmain {
@@ -819,7 +820,8 @@ p {
 
 .tremuseerplus {
   display: inline;
-  width: 15%;
+  width: 4rem;
+  height: 4rem;
   margin-bottom: -7%;
 }
 
@@ -848,6 +850,10 @@ p {
 .tremuseerlink {
   text-decoration: none;
   color: grey;
+}
+
+.three-museums {
+  padding: 1rem;
 }
 
 .bg-museums {

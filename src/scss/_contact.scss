@@ -1,5 +1,3 @@
-
-
 .kontaktmain{
   font-family: $font;
   margin: 2% 10%;
@@ -63,30 +61,11 @@
 }
 
 .bg-contact {
-    // background-image: url('../img/map.jpg') rgba(255,255,255,0.5);
     background-image: url('../img/map.jpg');
     background-size: 100% auto;
-    // background-blend-mode: screen;
-    // background-size:  cover;
     background-position: 0% 80%;
-    // background-position:  0%;
-    // background-position: 0 0;
-    // background-position: 40% center;
     background-repeat: no-repeat;
-    // $filter: drop-shadow(0 0 2px $tc-black);
     filter: saturate(70%);
-
-    // h1 {
-    //     filter: $filter;
-    // }
-
-    // .logo__header {
-    //     filter: $filter;
-    // }
-
-    // .menu-button {
-    //     filter: $filter;
-    // }
 }
 
 

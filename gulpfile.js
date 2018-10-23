@@ -197,7 +197,7 @@ gulp.task('imagemin', function () {
 
 gulp.task('minify-icons', function () {
     // gulp.src('src/img/*')
-    return gulp.src(['src/icons/**/*.svg'])
+    return gulp.src(['src/ico/**/*.svg'])
         .pipe(plumber())
         // .pipe(imagemin())
         // .pipe(imagemin({
@@ -227,7 +227,7 @@ gulp.task('minify-icons', function () {
                 ]
             })
         ]))
-        .pipe(gulp.dest('dist/icons'))
+        .pipe(gulp.dest('dist/ico'))
 });
 
 //compress all images
