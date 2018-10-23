@@ -860,30 +860,33 @@ p {
 /* line 7, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_tremuseer.scss */
 .tremuseerplus {
   display: inline;
-  width: 4rem;
-  height: 4rem;
-  margin-bottom: -7%;
+  width: 7%;
+  height: 7%;
+  margin-bottom: -20%;
 }
 
 /* line 13, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_tremuseer.scss */
 .texth3 {
   margin-left: 16%;
   display: inline;
+  font-size: 1rem;
 }
 
-/* line 17, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_tremuseer.scss */
+/* line 18, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_tremuseer.scss */
 .texth2 {
   display: inline;
+  font-size: 1.3rem;
+  margin-left: 8%;
 }
 
-/* line 20, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_tremuseer.scss */
+/* line 23, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_tremuseer.scss */
 .text {
   width: 100%;
   display: inline;
   margin-left: 16%;
 }
 
-/* line 25, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_tremuseer.scss */
+/* line 28, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_tremuseer.scss */
 .textslut {
   width: 100%;
   display: inline;
@@ -891,18 +894,20 @@ p {
   margin-bottom: 10%;
 }
 
-/* line 31, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_tremuseer.scss */
+/* line 34, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_tremuseer.scss */
 .tremuseerlink {
   text-decoration: none;
   color: grey;
 }
 
-/* line 36, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_tremuseer.scss */
+/* line 39, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_tremuseer.scss */
 .three-museums {
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
 }
 
-/* line 40, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_tremuseer.scss */
+/* line 45, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_tremuseer.scss */
 .bg-museums {
   background-image: url("../img/museum2.jpg");
   background-size: 120% auto;
