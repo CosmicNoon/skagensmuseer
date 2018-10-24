@@ -925,4 +925,20 @@ p {
   background-repeat: no-repeat;
 }
 
+/* line 52, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_tremuseer.scss */
+.bg-museums2 {
+  background-image: url("../img/drachmannshus.png");
+  background-size: 120% auto;
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
+}
+
+/* line 59, /Users/bohm/Documents/GitHub/skagensmuseer/src/scss/_tremuseer.scss */
+.bg-museums3 {
+  background-image: url("../img/anchershus.png");
+  background-size: 120% auto;
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
+}
+
 /*# sourceMappingURL=../css/main.map */
