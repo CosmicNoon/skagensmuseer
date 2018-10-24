@@ -321,7 +321,6 @@ p {
 
 .logo-svg--loading {
   animation-timing-function: ease-in;
-  fill: #ffffff;
 }
 
 .logo-svg--loading .cls-1 {
@@ -358,7 +357,7 @@ p {
   }
   to {
     transform: scale(1.1);
-    fill: #252C31;
+    fill: #7b6c48;
   }
 }
 
@@ -487,10 +486,26 @@ p {
 
 .menu__footer .social-links .offline-message {
   display: none;
+  grid-column: span 2 / -1;
+  font-weight: 500;
+  text-decoration-line: underline;
+  filter: drop-shadow(0 0 0.77px red);
+}
+
+.menu__footer .social-links .offline-message svg {
+  height: 2rem;
+  width: 2rem;
 }
 
 .offline .menu__footer .social-links .offline-message {
   display: list-item;
+  display: flex;
+}
+
+#lnr-warning .path2, #lnr-warning .path3 {
+  fill: red;
+  transform: scale(2, 1);
+  transform-origin: 50%;
 }
 
 .menu__footer svg {
@@ -745,14 +760,14 @@ p {
   padding: 0;
   height: 55vh;
   border-style: none;
+  color: black;
 }
 
 .bgforside-museum {
-  background-image: url("../img/thumbnail.png");
-  background-size: 120% auto;
-  background-position: 50% 80%;
+  background-image: url("../img/forside-header.jpg");
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  filter: brightness(130%) saturate(70%);
 }
 
 .kontaktmain {

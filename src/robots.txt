@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /js
+Allow: /css
+Allow: /img
+Disallow: /docs
+Sitemap: https://mich655r.apache.techcollege.dk/sitemap.xml

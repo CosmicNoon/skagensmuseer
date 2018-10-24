@@ -201,19 +201,28 @@ if (currentFrame.querySelector('.fade-to-white')) {
     });
 }
 
-if(currentFrame.querySelector('.svg-loader')) {
-    var loadingLogo = currentFrame.querySelector('.svg-loader');
-    var loadTime = 4000;
+if(currentFrame.querySelector('.logo__loading')) {
+    var loadingLogo = currentFrame.querySelector('.logo__loading');
+    var loadTime = 3000;
     setTimeout(function(){
-        // loadingLogo.classList.remove('logo-svg--loading')
         changePage('0');
     }, loadTime);
-
+    
     setTimeout(function(){
-        loadingLogo.classList.remove('svg-loader')
+        loadingLogo.classList.remove('logo-svg--loading')
+        // loadingLogo.classList.remove('svg-loader')
         // changePage(1);
     }, loadTime + 500);
 }
+
+setTimeout(function() {
+    var f = document.querySelectorAll('iframe');
+    f.forEach(mf => { 
+        mf.src = src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d133.15687824613994!2d10.597102303863783!3d57.724779762671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464f44de156a155d%3A0x9daec7ccbf7473c0!2sSkagens+Museum!5e0!3m2!1sda!2sdk!4v1539551028377";
+    });
+    // console.log('mapm loaded after 2s');
+}, 4000);
+// console.log('Started');
 
 // var navLinks = document.querySelectorAll('.navbar a');
 // navLinks.forEach(link => {

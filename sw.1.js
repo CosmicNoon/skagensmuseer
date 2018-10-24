@@ -11,7 +11,8 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
+// importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
+importScripts("/js/workbox-sw.js");
 
 workbox.skipWaiting();
 workbox.clientsClaim();
@@ -36,7 +37,7 @@ self.__precacheManifest = [
   },
   {
     "url": "css/main.css",
-    "revision": "30d41262f531e5f64b6357296d0a0956"
+    "revision": "670c23c5b6d7c63db4bb4ae439430581"
   },
   {
     "url": "docs/tests/main.css",
@@ -184,15 +185,11 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "338d21e6837c28592fb7d1a422d56001"
+    "revision": "a8de4ba9feb268e6478740e14f618587"
   },
   {
     "url": "js/showHide.js",
-    "revision": "5d2a92ed130d84e601e0a3eafcb4bfa8"
-  },
-  {
-    "url": "js/workbox-sw.js",
-    "revision": "52eec2226eead302b0fc856df103f04c"
+    "revision": "02c6d4542f85a8949c63691475a8bd3c"
   },
   {
     "url": "mstile-150x150.png",
@@ -204,7 +201,7 @@ self.__precacheManifest = [
   },
   {
     "url": "sw-register.js",
-    "revision": "690ee2ab37b1035204ba9efa7a211b26"
+    "revision": "bf62ae84bd77525dc6296bb9e875d1d2"
   },
   {
     "url": "video/video-poster.png",
@@ -221,3 +218,8 @@ self.__precacheManifest = [
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
+workbox.routing.registerRoute(
+    'https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700',
+    // workbox.strategies.networkFirst(),
+    workbox.strategies.cacheFirst(),
+);

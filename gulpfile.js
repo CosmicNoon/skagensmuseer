@@ -439,41 +439,6 @@ gulp.task('sass-prod', function () {
         .pipe(browserSync.stream());
 });
 
-
-// Don't purge for now, erroring on .0123 values being 
-// purged to 0123, and the browsers response is to see it as 123
-// guess what happens when you set something to .0625rem
-// original developer contacted for support.
-gulp.task('purge', function () {
-    console.log('BEWARE OF ERRORS! DOESNT PURGE PROPERLY!')
-    gulp.src(['src/css/**/*.css'])
-        .pipe(purge({
-            "zero_ignore_declaration": [".footer"]
-        }))
-        //   .pipe(purge({
-        //     "shorten" : false,
-        //     "shorten_zero": false,
-        //     "shorten_hexcolor": true,
-        //     "shorten_hexcolor_extended_names": true,
-        //     "shorten_hexcolor_UPPERCASE": true,
-        //     "shorten_font": true,
-        //     "shorten_background": true,
-        //     "shorten_background_min": 2,
-        //     "shorten_margin": true,
-        //     "shorten_padding": true,
-        //     "shorten_list_style": true,
-        //     "shorten_outline": true,
-        //     "shorten_border": true,
-        //     "shorten_border_top": true,
-        //     "shorten_border_right": true,
-        //     "shorten_border_bottom": true,
-        //     "shorten_border_left": true,
-        //     "shorten_border_radius": true,
-        // }))
-        //   .pipe(purge(purgeOptions))
-        .pipe(gulp.dest('./public'));
-})
-
 // Validate HTML, if you dare
 gulp.task('htmlval', function () {
     gulp.src('src/*.html')
